@@ -84,32 +84,7 @@ class HomePage extends StatelessWidget {
     {"name": "Egbert", "Email": "ecollip1x@sogou.com"},
     {"name": "Kristofor", "Email": "kragge1y@msu.edu"},
     {"name": "Jennine", "Email": "jsibbons1z@webeden.co.uk"},
-    {"name": "Sonja", "Email": "scicerone20@phoca.cz"},
-    {"name": "Hobard", "Email": "hhousen21@independent.co.uk"},
-    {"name": "Catharina", "Email": "ctorrejon22@tripadvisor.com"},
-    {"name": "Missy", "Email": "marenson23@ucoz.ru"},
-    {"name": "Paxton", "Email": "paddy24@nymag.com"},
-    {"name": "Andriette", "Email": "abruster25@jiathis.com"},
-    {"name": "Evin", "Email": "ejeffes26@smugmug.com"},
-    {"name": "Emlen", "Email": "ematzel27@blogger.com"},
-    {"name": "Laraine", "Email": "lwilstead28@huffingtonpost.com"},
-    {"name": "Bertina", "Email": "bsoutherton29@desdev.cn"},
-    {"name": "Myrlene", "Email": "mstoven2a@t.co"},
-    {"name": "Jo-anne", "Email": "jdahmke2b@google.com.hk"},
-    {"name": "Caleb", "Email": "cpetrolli2c@cmu.edu"},
-    {"name": "Clevey", "Email": "csykes2d@people.com.cn"},
-    {"name": "Myrah", "Email": "mpulford2e@smh.com.au"},
-    {"name": "Melisandra", "Email": "mgreenhaugh2f@indiatimes.com"},
-    {"name": "Ewell", "Email": "evereker2g@nature.com"},
-    {"name": "Baird", "Email": "bgeistbeck2h@eventbrite.com"},
-    {"name": "Jeanna", "Email": "jbordiss2i@uol.com.br"},
-    {"name": "Jolynn", "Email": "jtrayton2j@shutterfly.com"},
-    {"name": "Sutherlan", "Email": "sbexley2k@house.gov"},
-    {"name": "Pru", "Email": "pannes2l@icio.us"},
-    {"name": "Hanson", "Email": "hpedican2m@fastcompany.com"},
-    {"name": "Joseito", "Email": "jgilchrest2n@noaa.gov"},
-    {"name": "Martie", "Email": "mshaddock2o@businessweek.com"},
-    {"name": "Glyn", "Email": "gduffie2p@tiny.cc"}
+    {"name": "Sonja", "Email": "scicerone20@phoca.cz"}
   ];
   @override
   Widget build(BuildContext context) {
@@ -117,6 +92,33 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("SOHAG"),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: <Widget>[
+              DrawerHeader(
+                child:Container(
+                  child: Text("Drawer Header!",style: TextStyle(fontStyle: FontStyle.italic),),
+                ),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              ListTile(
+                leading: Icon(Icons.email),
+                title: new Text("Email"),
+              ),
+              ListTile(
+                leading: Icon(Icons.inbox),
+                title: new Text("Inbox"),
+              ),
+              ListTile(leading: Icon(Icons.watch),
+              title: Text("Youtube"),)
+            ],
+          ),
         ),
         body: ListView.builder(
           itemCount: people.length,

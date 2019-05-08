@@ -1,4 +1,4 @@
-#Wed May 08 12:26:26 BDT 2019
+#Wed May 08 17:07:59 BDT 2019
 base.0=/home/sohag/Desktop/Flutter_Projects/flutterProject/build/app/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
