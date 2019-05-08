@@ -22,20 +22,56 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             Container(
               margin: EdgeInsets.only(left: 40),
-              height: 60,
+              height: 300,
               width: 300,
               color: Colors.white,
               child: ListView(
-                scrollDirection: Axis.horizontal,
+                scrollDirection: Axis.vertical,
                 children: <Widget>[
-                  _cell(Colors.blueGrey[400]),
-                  _cell(Colors.yellow[600]),
-                  _cell(Colors.red[400]),
-                  _cell(Colors.blue[600]),
-                  _cell(Colors.green),
-                  _cell(Colors.redAccent),
-                  _cell(Colors.orange),
-                  _cell(Colors.lightGreen)
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("S"),
+                    ),
+                    title: Text("SOHAG"),
+                    subtitle: Text("I am a student."),
+                    onTap: () {},
+                  ),
+                  Divider(),
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("M"),
+                    ),
+                    title: Text("MAHIN"),
+                    subtitle: Text("I am a student."),
+                    onTap: () {},
+                  ),
+                  Divider(),
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("J"),
+                    ),
+                    title: Text("JAHAN"),
+                    subtitle: Text("I am a student."),
+                    onTap: () {},
+                  ),
+                  Divider(),
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("J"),
+                    ),
+                    title: Text("JAHAN"),
+                    subtitle: Text("I am a student."),
+                    onTap: () {},
+                  ),
+                  Divider(),
+                  ListTile(
+                    leading: CircleAvatar(
+                      child: Text("J"),
+                    ),
+                    title: Text("JAHAN"),
+                    subtitle: Text("I am a student."),
+                    onTap: () {},
+                  )
                 ],
               ),
             ),
@@ -48,8 +84,7 @@ class HomePage extends StatelessWidget {
       Container(
         height: 50,
         width: 50,
-        decoration: BoxDecoration(color: Colors.green,
-        shape: BoxShape.circle),
+        decoration: BoxDecoration(color: Colors.green, shape: BoxShape.circle),
         child: Icon(Icons.add_to_photos),
       ),
       SizedBox(

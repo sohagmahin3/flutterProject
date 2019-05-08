@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sohag/Desktop/Flutter_Projects/list_view_test/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/home/sohag/Desktop/Flutter_Projects/flutterProject/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/sohag/Desktop/Flutter_Projects/list_view_test/android/app/src/main/res/values/styles.xml",
+                    "source": "/home/sohag/Desktop/Flutter_Projects/flutterProject/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
